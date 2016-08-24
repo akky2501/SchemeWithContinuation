@@ -22,7 +22,7 @@ public class Pair implements List {
     
     @Override
     public Obj eval(Env env, Cont cont) {
-        return car.eval(env, x -> x.apply(cdr, env, y -> cont.apply(y)));
+        return car.eval(env, x -> x.apply(cdr, env, cont));
     }
     
     @Override

@@ -1,3 +1,3 @@
 # SchemeWithContinuation
 
-A minimal implementation of Scheme by Java8.
+A minimal implementation of Scheme with continuation by Java8.

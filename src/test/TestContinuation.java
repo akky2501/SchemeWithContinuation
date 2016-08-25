@@ -57,8 +57,8 @@ public class TestContinuation {
         assertEquals(symbol("z"), eval(read("(set! H 'z)")));
         assertEquals(symbol("y"), eval(read("(set! G 'y)")));
         // H is not re-evaluated.
-        assertEquals(read("(a b x y)"), eval(read("(C 'x)")));
-        assertEquals(read("(a b y y)"), eval(read("(C 'y)")));
+        assertEquals(read("(z b x d)"), eval(read("(C 'x)")));
+        assertEquals(read("(z b y d)"), eval(read("(C 'y)")));
     }
     
     @Test
